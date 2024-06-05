@@ -82,14 +82,13 @@ let paises = {
   GH: 'Gana',
   GE: 'Geórgia',
   GI: 'Gibraltar',
-  GB: 'Grã-Bretanha (Reino Unido, UK)',
+  GB: 'Reino Unido',
   GD: 'Granada',
   GR: 'Grécia',
   GL: 'Groelândia',
   GP: 'Guadalupe',
   GU: 'Guam',
   GT: 'Guatemala',
-  G: 'Guernsey',
   GN: 'Guiné',
   GQ: 'Guiné Equatorial',
   GW: 'Guiné-Bissau',
@@ -135,7 +134,6 @@ let paises = {
   MQ: 'Martinica',
   MU: 'Maurício',
   MR: 'Mauritânia',
-  YT: 'Mayotte',
   MX: 'México',
   FM: 'Micronésia',
   MZ: 'Moçambique',
@@ -368,7 +366,6 @@ const roundStart = function () {
   inputResposta.focus();
   document.querySelector('.chatbox').innerHTML = '';
   const countdown = setInterval(() => {
-    console.log(countdown);
     if (countdownValue > -1) {
       countdownElement.textContent = `${
         (countdownValue / 20).toFixed(0) - 1 > -1
@@ -399,7 +396,6 @@ const roundEnd = function (right) {
   countdownValue = 100;
 
   const countdownEnd = setInterval(() => {
-    console.log('end' + countdownEnd);
     if (countdownValue > -1) {
       document.querySelector(
         '.countdown-blue'
