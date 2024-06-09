@@ -260,7 +260,7 @@ const update = function () {
   pais = paisRandom(paises);
   console.log(pais);
 
-  flag = `/flags/${pais[1].toLowerCase()}.png`;
+  flag = `https://countryflagsapi.netlify.app/flag/${pais[1].toLowerCase()}.svg`;
   document.querySelector('.image-main').src = flag;
 
   countdownValue = 200;
