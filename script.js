@@ -1,4 +1,4 @@
-////
+'use strict'
 
 const btnSend = document.querySelector('.enviar');
 const inputResposta = document.querySelector('.input-resposta');
